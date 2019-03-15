@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=1326,user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>register</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../css/register.css">
+  </head>
+  <body>
+      <div class="content">
+          <div class="left">
+              <div>
+                  <img src="../images/xiaohui1.jpg" class="xiaohui">
+                  <span>| 用户登录</span>
+              </div>
+              <form class="form-signin" action="login.jsp" method="get" onsubmit="return validate_form()">
+                  <select class="form-control" autofocus>
+                      <option>大连交通大学</option>
+                      <option>大连交通大学2</option>
+                      <option>大连交通大学3</option>
+                      <option>大连交通大学4</option>
+                      <option>大连交通大学5</option>
+                  </select>
+                  <label for="input_login_name" class="sr-only">LoginName</label>
+                  <input type="text" id="input_login_name" class="form-control" placeholder="请输入手机号/邮箱/学号" data-target="#myModal">
+                  <label for="inputPassword" class="sr-only">Password</label>
+                  <input type="password" id="inputPassword" class="form-control" placeholder="请输入密码">
+                  <div class="checkbox">
+                      <label>
+                          <input type="checkbox" value="remember-me"> 七天内免登录
+                      </label>
+                      <a href="">忘记密码？</a>
+                  </div>
+                  <div>
+
+                  </div>
+                  <button class="btn btn-lg btn-primary btn-block btn-login" type="submit" id="btn-login">登录</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                  <h4 class="modal-title" id="myModalLabel"></h4>
+                              </div>
+                              <div class="modal-body">
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+              <div class="footer">
+                  <span>有问题,请联系<a href=""> 在线客服</a></span>
+                  <a href="">立即 注册</a>
+              </div>
+          </div>
+          <div class="border">
+              <img src="../images/border.png">
+          </div>
+          <div class="right">
+              <img src="../images/health.png" class="health">
+              <img src="../images/handcode.png" class="handcode">
+              <img src="../images/code.png" class="code">
+              <div class="codeDescrip">
+                  <p>扫描下载<a href="">高校邦APP!</a>移动学习新体验！</p>
+              </div>
+          </div>
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/myScrip.js"></script>
+  </body>
+</html>
